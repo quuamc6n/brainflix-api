@@ -74,6 +74,6 @@ app.post("/videos", (req, res) => {
 
 app.use(express.static(path.join(__dirname, "public")));
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 });
