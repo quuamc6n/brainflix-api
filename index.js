@@ -3,6 +3,7 @@ const express = require("express");
 const app = express();
 const fs = require("fs");
 const PORT = process.env.PORT || 5050;
+const API_KEY = process.env.API_KEY
 const cors = require("cors");
 const { v4: uuidv4 } = require("uuid");
 const path = require("path");
@@ -31,7 +32,7 @@ app.post("/videos", (req, res) => {
     id,
     title,
     description,
-    image: "http://localhost:5050/images/brainflix_static.png",
+    image: "https://brainflexbackend.onrender.com/images/brainflix_static.png",
     channel: "Cat's Eyes",
     views: 101010,
     likes: 101010,
